@@ -17,50 +17,58 @@
           <div style="background-color: #FFFC00;height: 7px; width: 85%;"></div>
           <br>
 
-          <p class="filter"><input class="form-check-input position-static" type="checkbox"> U <input type="range" min="1" max="7" step=".1" class="range" id="blueSat">
-          <input type="color" class="input-color" name="color" value="#A649EC" /></p>
-          
-          
-          <p class="filter"><input class="form-check-input position-static" type="checkbox"> G <input type="range" min="1" max="7" step=".1" id="blueBright">
-          <input type="color" class="input-color" name="color" value="#3933FF" /> 
+          <p class="filter">
+            <input class="form-check-input position-static" data-target="u_filter" type="checkbox"> U 
+            <input type="range" min="1" max="7" step=".1" class="range" id="u_value">
+            <input type="color" class="input-color" name="color" value="#A649EC" />
           </p>
           
-          <p class="filter"><input class="form-check-input position-static" type="checkbox"> R 
-          <input type="range" min="2" max="26" step=".1" class="range" id="greenSat">
-          <input type="color" class="input-color" name="color" value="#6FD898" />
+          
+          <p class="filter">
+            <input class="form-check-input position-static" type="checkbox"> G 
+            <input type="range" min="1" max="7" step=".1" id="g_value">
+            <input type="color" class="input-color" name="color" value="#3933FF" /> 
           </p>
-
-                    <p class="filter"><input class="form-check-input position-static" type="checkbox"> I 
-          <input type="range" min="2" max="26" step=".1" class="range" id="greenSat">
-          <input type="color" class="input-color" name="color" value="#E9DE20" />
-          </p>
-
-                    <p class="filter"><input class="form-check-input position-static" type="checkbox"> Z 
-          <input type="range" min="2" max="26" step=".1" class="range" id="greenSat">
-          <input type="color" class="input-color" name="color" value="#E39F62" />
+          
+          <p class="filter">
+            <input class="form-check-input position-static" type="checkbox"> R 
+            <input type="range" min="2" max="26" step=".1" class="range" id="r_value">
+            <input type="color" class="input-color" name="color" value="#6FD898" />
           </p>
 
-                    <p class="filter"><input class="form-check-input position-static" type="checkbox"> Y 
-          <input type="range" min="2" max="26" step=".1" class="range" id="greenSat">
-          <input type="color" class="input-color" name="color" value="#D73131" />
+          <p class="filter">
+            <input class="form-check-input position-static" type="checkbox"> I 
+            <input type="range" min="2" max="26" step=".1" class="range" id="i_value">
+            <input type="color" class="input-color" name="color" value="#E9DE20" />
           </p>
-          
-          
+
+          <p class="filter">
+            <input class="form-check-input position-static" type="checkbox"> Z 
+            <input type="range" min="2" max="26" step=".1" class="range" id="z_value">
+            <input type="color" class="input-color" name="color" value="#E39F62" />
+          </p>
+
+          <p class="filter">
+            <input class="form-check-input position-static" type="checkbox"> Y 
+            <input type="range" min="2" max="26" step=".1" class="range" id="y_value">
+            <input type="color" class="input-color" name="color" value="#D73131" />
+          </p>
+
           <br>
-          <button id="button" class="button" value="preset" name="preset" >Reset</button>
+          <button id="button" class="button" value="preset" name="preset" onclick="reset()" >Reset</button>
           <button id="button" class="button" value="preset" name="preset" onclick="window.print()" >Print</button>
         </div>
 
-        <!-- This is where the images go -->
+        <!-- Images -->
         <div class="col-8">
           <div>
-            <div class="u_filter" id="1"></div>
-            <div class="g_filter" id="2"></div>
-            <div class="r_filter" id="3"></div>
-            <div class="i_filter" id="3"></div>
-            <div class="z_filter" id="3"></div>
-            <div class="y_filter" id="3"></div>
-          </div>
+            <div class="u_filter"></div>
+            <div class="g_filter"></div>
+            <div class="r_filter"></div>
+            <div class="i_filter"></div>
+            <div class="z_filter"></div>
+            <div class="y_filter"></div>
+          </div>          
            <button id="button" id="+" class="button sticky" value="preset" name="preset" onclick="zoom_in()" >+</button>
            <button id="button" id="-" style="left:70px;"class="button sticky" value="preset" name="preset" onclick="zoom_out()" >-</button>
 
@@ -72,14 +80,6 @@
                 <option value="3">M13</option>
               </select>
             </div>
-        </div>
-
-      </div>
-
-      <div class="row">
-        <div class="col-4"></div>
-        <div class="col-8">
-         
         </div>
       </div>
     </div>

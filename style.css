@@ -11,7 +11,6 @@
 body {
 	margin: 10px;
 	font-family: sans-serif;
-	/*font-family: 'Roboto Mono', monospace;*/
   font-family: 'BWNistaGEo-Lt';
   color: #0C0433;
   outline: 0;
@@ -68,17 +67,15 @@ input[type=range]::-webkit-slider-thumb {
   color: #3498db;
 }
 
-
-
 .button {
   background: #4477ae;
   width: auto;
-  
   padding: 10px 20px;
   border: none;
   font-weight: light;
   color: white;
   border-radius: 3px;
+  outline: none !important;
 }
 .button:hover {
   background: #759bc3;
@@ -97,6 +94,8 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 /* Filters */
+
+/* Purple */
 .u_filter {
     border-radius: 10px;
     position: absolute;
@@ -105,7 +104,7 @@ input[type=range]::-webkit-slider-thumb {
   	background-size: 100%;
   	background-blend-mode: multiply;
   	background-image: url('./assets/m33/png/m33_u.png');
-  	background-color: blue;
+  	background-color: #A649EC;
   	mix-blend-mode: screen;
   	-webkit-filter: brightness(100%);
   	-webkit-filter: saturate(2.5); 
@@ -114,6 +113,8 @@ input[type=range]::-webkit-slider-thumb {
     -moz-box-shadow:    3px 3px  6px #ccc;  /* Firefox 3.5 - 3.6 */
     box-shadow:         3px 3px  6px #ccc;
 }
+
+/* Blue */
 .g_filter {
     border-radius: 10px;
     position: absolute;
@@ -122,13 +123,15 @@ input[type=range]::-webkit-slider-thumb {
   	background-size: 100%;
   	background-blend-mode: multiply;
   	background-image: url('./assets/m33/png/m33_g.png');
-  	background-color: green;
+  	background-color: #3933FF;
   	mix-blend-mode: screen;
-  	-webkit-filter: brightness(500%); 
-  	-webkit-filter: saturate(17); 
+  	-webkit-filter: brightness(100%); 
+  	-webkit-filter: saturate(2.5); 
   	/*display: none;*/
 
 }
+
+/* Green */
 .r_filter {
   border-radius: 10px;
   position: absolute;
@@ -136,14 +139,15 @@ input[type=range]::-webkit-slider-thumb {
 	height: 90%;
 	background-blend-mode: multiply;
 	background-image: url('./assets/m33/png/m33_r.png');
-	background-color: #f42f00;
+	background-color: #6FD898;
   mix-blend-mode: screen;
   background-size: 100%;
-  -webkit-filter: saturate(4.4);
-  -webkit-filter: brightness(320%); 
+  -webkit-filter: brightness(100%); 
+  -webkit-filter: saturate(2.5);
   /*display: none;*/
 }
 
+/* Yellow */
 .i_filter {
   border-radius: 10px;
   position: absolute;
@@ -151,14 +155,15 @@ input[type=range]::-webkit-slider-thumb {
   height: 90%;
   background-blend-mode: multiply;
   background-image: url('./assets/m33/png/m33_i.png');
-  background-color: #f42f00;
+  background-color: #E9DE20;
   mix-blend-mode: screen;
   background-size: 100%;
-  -webkit-filter: saturate(4.4);
-  -webkit-filter: brightness(320%); 
+  -webkit-filter: brightness(100%);
+  -webkit-filter: saturate(2.5);
   /*display: none;*/
 }
 
+/* Orange */
 .z_filter {
   border-radius: 10px;
   position: absolute;
@@ -166,14 +171,15 @@ input[type=range]::-webkit-slider-thumb {
   height: 90%;
   background-blend-mode: multiply;
   background-image: url('./assets/m33/png/m33_z.png');
-  background-color: #f42f00;
+  background-color: #E39F62;
   mix-blend-mode: screen;
   background-size: 100%;
-  -webkit-filter: saturate(4.4);
-  -webkit-filter: brightness(320%); 
+  -webkit-filter: brightness(100%); 
+  -webkit-filter: saturate(2.5);
   /*display: none;*/
 }
 
+/* Red */
 .y_filter {
   border-radius: 10px;
   position: absolute;
@@ -181,40 +187,38 @@ input[type=range]::-webkit-slider-thumb {
   height: 90%;
   background-blend-mode: multiply;
   background-image: url('./assets/m33/png/m33_y.png');
-  background-color: #f42f00;
+  background-color: #D73131;
   mix-blend-mode: screen;
   background-size: 100%;
-  -webkit-filter: saturate(4.4);
-  -webkit-filter: brightness(320%); 
+  -webkit-filter: brightness(100%); 
+  -webkit-filter: saturate(1.7);
   /*display: none;*/
 }
 
 
 @media only screen and (max-width: 1100px) {
-
   body {
-  margin: 10px;
-  
+    margin: 10px;
+  }
 
-}
-h1 {
-  font-size: 25px;
-}
+  h1 {
+    font-size: 25px;
+  }
 
-h2 {
-  font-size: 18px;
-}
+  h2 {
+    font-size: 18px;
+  }
 
-p {
-  font-size: 14px;
-}
+  p {
+    font-size: 14px;
+  }
 
-a {
-  color: #6925bb;
-}
+  a {
+    color: #6925bb;
+  }
 
-a:hover {
-  color: #9E6ADD;
-  transition: 200ms;
-}
+  a:hover {
+    color: #9E6ADD;
+    transition: 200ms;
+  }
 }
