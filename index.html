@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LSST Formal Education</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <br>
+      <div class="row">
+        
+        <!-- Words and Sliders -->
+        <div class="col-4">
+          <h1>Color The Universe</h1>
+          <h2>Learn how to make astronomy images.</h2>
+          <div style="background-color: #FFFC00;height: 7px; width: 85%;"></div>
+          <br>
+
+          <p class="filter">
+            <input class="form-check-input position-static" data-target="u_filter" type="checkbox"> U 
+            <input type="range" min="1" max="7" step=".1" class="range" id="u_value">
+            <input type="color" class="input-color" name="color" value="#A649EC" />
+          </p>
+          
+          
+          <p class="filter">
+            <input class="form-check-input position-static" type="checkbox"> G 
+            <input type="range" min="1" max="7" step=".1" id="g_value">
+            <input type="color" class="input-color" name="color" value="#3933FF" /> 
+          </p>
+          
+          <p class="filter">
+            <input class="form-check-input position-static" type="checkbox"> R 
+            <input type="range" min="2" max="26" step=".1" class="range" id="r_value">
+            <input type="color" class="input-color" name="color" value="#6FD898" />
+          </p>
+
+          <p class="filter">
+            <input class="form-check-input position-static" type="checkbox"> I 
+            <input type="range" min="2" max="26" step=".1" class="range" id="i_value">
+            <input type="color" class="input-color" name="color" value="#E9DE20" />
+          </p>
+
+          <p class="filter">
+            <input class="form-check-input position-static" type="checkbox"> Z 
+            <input type="range" min="2" max="26" step=".1" class="range" id="z_value">
+            <input type="color" class="input-color" name="color" value="#E39F62" />
+          </p>
+
+          <p class="filter">
+            <input class="form-check-input position-static" type="checkbox"> Y 
+            <input type="range" min="2" max="26" step=".1" class="range" id="y_value">
+            <input type="color" class="input-color" name="color" value="#D73131" />
+          </p>
+
+          <br>
+          <button id="button" class="button" value="preset" name="preset" onclick="reset()" >Reset</button>
+          <button id="button" class="button" value="preset" name="preset" onclick="window.print()" >Print</button>
+        </div>
+
+        <!-- Images -->
+        <div class="col-8">
+          <div>
+            <div class="u_filter"></div>
+            <div class="g_filter"></div>
+            <div class="r_filter"></div>
+            <div class="i_filter"></div>
+            <div class="z_filter"></div>
+            <div class="y_filter"></div>
+          </div>          
+           <button id="button" id="+" class="button sticky" value="preset" name="preset" onclick="zoom_in()" >+</button>
+           <button id="button" id="-" style="left:70px;"class="button sticky" value="preset" name="preset" onclick="zoom_out()" >-</button>
+
+            <div class="input-group sticky input-container">
+              <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                <option selected>M33</option>
+                <option value="1">M16</option>
+                <option value="2">M15</option>
+                <option value="3">M13</option>
+              </select>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,224 @@
+@font-face {
+    font-family: BWNistaGEo-Lt;
+    src: url(./assets/fonts/BWNistaGEo-Lt.otf);
+}
+
+@font-face {
+    font-family: BWNistaGEo-Bk;
+    src: url(./assets/fonts/BWNistaGEo-Bk.otf);
+}
+
+body {
+	margin: 10px;
+	font-family: sans-serif;
+  font-family: 'BWNistaGEo-Lt';
+  color: #0C0433;
+  outline: 0;
+}
+h1 {
+  font-size: 50px;
+  font-family: 'BWNistaGEo-Bk';
+
+}
+
+a {
+	color: #6925bb;
+}
+
+a:hover {
+	color: #9E6ADD;
+	transition: 200ms;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+input[type="range"] {
+  /*display: block;*/
+  -webkit-appearance: none;
+  background-color: #daf0ff;
+  width: 250px;
+  height: 5px;
+  border-radius: 5px;
+  outline: 0;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}		
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 26px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -4px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+}
+
+.input-color {
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.button {
+  background: #4477ae;
+  width: auto;
+  padding: 10px 20px;
+  border: none;
+  font-weight: light;
+  color: white;
+  border-radius: 3px;
+  outline: none !important;
+}
+.button:hover {
+  background: #759bc3;
+  transition: .2s;
+}
+
+.sticky {
+  position: absolute;
+  bottom: 0;  
+}
+
+.input-container {
+  width: 70%;
+  float: right;
+  right:0;
+}
+
+/* Filters */
+
+/* Purple */
+.u_filter {
+    border-radius: 10px;
+    position: absolute;
+  	width: 100%;
+  	height: 90%;
+  	background-size: 100%;
+  	background-blend-mode: multiply;
+  	background-image: url('./assets/m33/png/m33_u.png');
+  	background-color: #A649EC;
+  	mix-blend-mode: screen;
+  	-webkit-filter: brightness(100%);
+  	-webkit-filter: saturate(2.5); 
+  	/*display: none; */
+    -webkit-box-shadow: 3px 3px  6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    3px 3px  6px #ccc;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         3px 3px  6px #ccc;
+}
+
+/* Blue */
+.g_filter {
+    border-radius: 10px;
+    position: absolute;
+  	width: 100%;
+  	height: 90%;
+  	background-size: 100%;
+  	background-blend-mode: multiply;
+  	background-image: url('./assets/m33/png/m33_g.png');
+  	background-color: #3933FF;
+  	mix-blend-mode: screen;
+  	-webkit-filter: brightness(100%); 
+  	-webkit-filter: saturate(2.5); 
+  	/*display: none;*/
+
+}
+
+/* Green */
+.r_filter {
+  border-radius: 10px;
+  position: absolute;
+	width: 100%;
+	height: 90%;
+	background-blend-mode: multiply;
+	background-image: url('./assets/m33/png/m33_r.png');
+	background-color: #6FD898;
+  mix-blend-mode: screen;
+  background-size: 100%;
+  -webkit-filter: brightness(100%); 
+  -webkit-filter: saturate(2.5);
+  /*display: none;*/
+}
+
+/* Yellow */
+.i_filter {
+  border-radius: 10px;
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  background-blend-mode: multiply;
+  background-image: url('./assets/m33/png/m33_i.png');
+  background-color: #E9DE20;
+  mix-blend-mode: screen;
+  background-size: 100%;
+  -webkit-filter: brightness(100%);
+  -webkit-filter: saturate(2.5);
+  /*display: none;*/
+}
+
+/* Orange */
+.z_filter {
+  border-radius: 10px;
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  background-blend-mode: multiply;
+  background-image: url('./assets/m33/png/m33_z.png');
+  background-color: #E39F62;
+  mix-blend-mode: screen;
+  background-size: 100%;
+  -webkit-filter: brightness(100%); 
+  -webkit-filter: saturate(2.5);
+  /*display: none;*/
+}
+
+/* Red */
+.y_filter {
+  border-radius: 10px;
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  background-blend-mode: multiply;
+  background-image: url('./assets/m33/png/m33_y.png');
+  background-color: #D73131;
+  mix-blend-mode: screen;
+  background-size: 100%;
+  -webkit-filter: brightness(100%); 
+  -webkit-filter: saturate(1.7);
+  /*display: none;*/
+}
+
+
+@media only screen and (max-width: 1100px) {
+  body {
+    margin: 10px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  a {
+    color: #6925bb;
+  }
+
+  a:hover {
+    color: #9E6ADD;
+    transition: 200ms;
+  }
+}
