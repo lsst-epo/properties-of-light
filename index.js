@@ -1,21 +1,27 @@
 var zoom = 100;
 
 
-function Zoom() {
-	zoom++;
-	console.log(zoom)
-	document.getElementsByClassName('b_filter')[0].setAttribute('style', 'background-size: ' + zoom + '%');
+function zoom_in() {
+	zoom+=5;
 	document.getElementsByClassName('u_filter')[0].setAttribute('style', 'background-size: ' + zoom + '%');
-	document.getElementsByClassName('v_filter')[0].setAttribute('style', 'background-size: ' + zoom + '%');
+	document.getElementsByClassName('g_filter')[0].setAttribute('style', 'background-size: ' + zoom + '%');
+	document.getElementsByClassName('r_filter')[0].setAttribute('style', 'background-size: ' + zoom + '%');
+	document.getElementsByClassName('i_filter')[0].setAttribute('style', 'background-size: ' + zoom + '%');
+	document.getElementsByClassName('z_filter')[0].setAttribute('style', 'background-size: ' + zoom + '%');
+	document.getElementsByClassName('y_filter')[0].setAttribute('style', 'background-size: ' + zoom + '%');
+}
 
+function zoom_out() {
+	zoom-=5;
+	document.getElementsByClassName('u_filter')[0].setAttribute('style', 'background-size: ' + zoom + '%');
+	document.getElementsByClassName('g_filter')[0].setAttribute('style', 'background-size: ' + zoom + '%');
+	document.getElementsByClassName('r_filter')[0].setAttribute('style', 'background-size: ' + zoom + '%');
+	document.getElementsByClassName('i_filter')[0].setAttribute('style', 'background-size: ' + zoom + '%');
+	document.getElementsByClassName('z_filter')[0].setAttribute('style', 'background-size: ' + zoom + '%');
+	document.getElementsByClassName('y_filter')[0].setAttribute('style', 'background-size: ' + zoom + '%');
 }
 
 function check_toggle() {
-  // Get the checkbox
-  var checkBox = document.getElementById("myCheck");
-  // Get the output text
-  var image = document.getElementById("1");
-
   // If the checkbox is checked, display the output text
   if (checkBox.checked == true){
     image.style.display = "none";

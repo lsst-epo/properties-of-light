@@ -16,30 +16,36 @@
           <h2>Learn how to make astronomy images.</h2>
           <div style="background-color: #FFFC00;height: 7px; width: 85%;"></div>
           <br>
-          <p>U 
-          <!-- <input type="color" id="input-colo" name="color" value="#FF33F3" /> -->
+
+          <p class="filter"><input class="form-check-input position-static" type="checkbox"> U <input type="range" min="1" max="7" step=".1" class="range" id="blueSat">
+          <input type="color" class="input-color" name="color" value="#A649EC" /></p>
+          
+          
+          <p class="filter"><input class="form-check-input position-static" type="checkbox"> G <input type="range" min="1" max="7" step=".1" id="blueBright">
+          <input type="color" class="input-color" name="color" value="#3933FF" /> 
           </p>
-          <input type="range" min="1" max="7" step=".1" class="range" id="blueSat">
-          <p>G 
-          <!-- <input type="color" id="input-color" name="color" value="#3933FF" />  -->
-          </p>
-          <input type="range" min="1" max="7" step=".1" id="blueBright">
-          <p>R 
-          <!-- <input type="color" id="input-color" name="color" value="#00B22E" /> -->
-          </p>
+          
+          <p class="filter"><input class="form-check-input position-static" type="checkbox"> R 
           <input type="range" min="2" max="26" step=".1" class="range" id="greenSat">
-          <p>I 
-          <!-- <input type="color" id="input-color" name="color" value="#FBF820" /> -->
+          <input type="color" class="input-color" name="color" value="#6FD898" />
           </p>
-          <input type="range" min="1" max="7" step=".1" id="greenBright">
-          <p>Z 
-          <!-- <input type="color" id="input-color" name="color" value="#FB8D20" /> -->
+
+                    <p class="filter"><input class="form-check-input position-static" type="checkbox"> I 
+          <input type="range" min="2" max="26" step=".1" class="range" id="greenSat">
+          <input type="color" class="input-color" name="color" value="#E9DE20" />
           </p>
-          <input type="range" min="1" max="7" step=".1" class="range" id="redSat">
-          <p>Y 
-          <!-- <input type="color" id="input-color" name="color" value="#FB2020" /> -->
+
+                    <p class="filter"><input class="form-check-input position-static" type="checkbox"> Z 
+          <input type="range" min="2" max="26" step=".1" class="range" id="greenSat">
+          <input type="color" class="input-color" name="color" value="#E39F62" />
           </p>
-          <input type="range" min="1" max="7" step=".1" id="redBright">
+
+                    <p class="filter"><input class="form-check-input position-static" type="checkbox"> Y 
+          <input type="range" min="2" max="26" step=".1" class="range" id="greenSat">
+          <input type="color" class="input-color" name="color" value="#D73131" />
+          </p>
+          
+          
           <br>
           <button id="button" class="button" value="preset" name="preset" >Reset</button>
           <button id="button" class="button" value="preset" name="preset" onclick="window.print()" >Print</button>
@@ -48,15 +54,15 @@
         <!-- This is where the images go -->
         <div class="col-8">
           <div>
-            <div class="b_filter" id="1"></div>
-            <div class="v_filter" id="2"></div>
-            <div class="ha_filter" id="3"></div>
-            <div class="i_filter" id="3"></div>
+            <div class="u_filter" id="1"></div>
+            <div class="g_filter" id="2"></div>
             <div class="r_filter" id="3"></div>
-            <div class="u_filter" id="3"></div>
+            <div class="i_filter" id="3"></div>
+            <div class="z_filter" id="3"></div>
+            <div class="y_filter" id="3"></div>
           </div>
-           <button id="button" id="+" class="button sticky" value="preset" name="preset" onclick="" >+</button>
-           <button id="button" id="-" style="left:70px;"class="button sticky" value="preset" name="preset" >-</button>
+           <button id="button" id="+" class="button sticky" value="preset" name="preset" onclick="zoom_in()" >+</button>
+           <button id="button" id="-" style="left:70px;"class="button sticky" value="preset" name="preset" onclick="zoom_out()" >-</button>
 
             <div class="input-group sticky input-container">
               <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">

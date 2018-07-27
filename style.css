@@ -14,6 +14,7 @@ body {
 	/*font-family: 'Roboto Mono', monospace;*/
   font-family: 'BWNistaGEo-Lt';
   color: #0C0433;
+  outline: 0;
 }
 h1 {
   font-size: 50px;
@@ -36,10 +37,10 @@ a:hover {
 	clear: both;
 }
 input[type="range"] {
-  display: block;
+  /*display: block;*/
   -webkit-appearance: none;
   background-color: #daf0ff;
-  width: 300px;
+  width: 250px;
   height: 5px;
   border-radius: 5px;
   outline: 0;
@@ -58,16 +59,16 @@ input[type=range]::-webkit-slider-thumb {
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
 }
 
-
-
 .input-color {
-  position: absolute;
-  right: -8px;
-  top: -8px;
-  width: 56px;
-  height: 56px;
+  width: 30px;
+  height: 30px;
   border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: #3498db;
 }
+
+
 
 .button {
   background: #4477ae;
@@ -95,14 +96,15 @@ input[type=range]::-webkit-slider-thumb {
   right:0;
 }
 
-.b_filter {
+/* Filters */
+.u_filter {
     border-radius: 10px;
     position: absolute;
   	width: 100%;
   	height: 90%;
   	background-size: 100%;
   	background-blend-mode: multiply;
-  	background-image: url('./assets/m33/png/m33_b.png');
+  	background-image: url('./assets/m33/png/m33_u.png');
   	background-color: blue;
   	mix-blend-mode: screen;
   	-webkit-filter: brightness(100%);
@@ -112,14 +114,14 @@ input[type=range]::-webkit-slider-thumb {
     -moz-box-shadow:    3px 3px  6px #ccc;  /* Firefox 3.5 - 3.6 */
     box-shadow:         3px 3px  6px #ccc;
 }
-.v_filter {
+.g_filter {
     border-radius: 10px;
     position: absolute;
   	width: 100%;
   	height: 90%;
   	background-size: 100%;
   	background-blend-mode: multiply;
-  	background-image: url('./assets/m33/png/m33_v.png');
+  	background-image: url('./assets/m33/png/m33_g.png');
   	background-color: green;
   	mix-blend-mode: screen;
   	-webkit-filter: brightness(500%); 
@@ -127,13 +129,13 @@ input[type=range]::-webkit-slider-thumb {
   	/*display: none;*/
 
 }
-.ha_filter {
+.r_filter {
   border-radius: 10px;
   position: absolute;
 	width: 100%;
 	height: 90%;
 	background-blend-mode: multiply;
-	background-image: url('./assets/m33/png/m33_ha.png');
+	background-image: url('./assets/m33/png/m33_r.png');
 	background-color: #f42f00;
   mix-blend-mode: screen;
   background-size: 100%;
@@ -157,13 +159,13 @@ input[type=range]::-webkit-slider-thumb {
   /*display: none;*/
 }
 
-.r_filter {
+.z_filter {
   border-radius: 10px;
   position: absolute;
   width: 100%;
   height: 90%;
   background-blend-mode: multiply;
-  background-image: url('./assets/m33/png/m33_ha.png');
+  background-image: url('./assets/m33/png/m33_z.png');
   background-color: #f42f00;
   mix-blend-mode: screen;
   background-size: 100%;
@@ -172,13 +174,13 @@ input[type=range]::-webkit-slider-thumb {
   /*display: none;*/
 }
 
-.u_filter {
+.y_filter {
   border-radius: 10px;
   position: absolute;
   width: 100%;
   height: 90%;
   background-blend-mode: multiply;
-  background-image: url('./assets/m33/png/m33_ha.png');
+  background-image: url('./assets/m33/png/m33_y.png');
   background-color: #f42f00;
   mix-blend-mode: screen;
   background-size: 100%;
