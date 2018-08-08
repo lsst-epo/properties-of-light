@@ -17,6 +17,59 @@ var i_value = document.getElementById('i_value');
 var z_value = document.getElementById('z_value');
 var y_value = document.getElementById('y_value');
 
+// Checkbox variables
+
+var u_checkbox = document.getElementById('u_checkbox');
+var g_checkbox = document.getElementById('g_checkbox');
+var r_checkbox = document.getElementById('r_checkbox');
+var i_checkbox = document.getElementById('i_checkbox');
+var z_checkbox = document.getElementById('z_checkbox');
+var y_checkbox = document.getElementById('y_checkbox');
+
+function check() {
+	// U
+	if (u_checkbox.checked == true) {
+		u_filter.setAttribute('style', 'display:block');
+	}
+	else {
+		u_filter.setAttribute('style', 'display:none');
+	}
+	// G
+		if (g_checkbox.checked == true) {
+		g_filter.setAttribute('style', 'display:block');
+	}
+	else {
+		g_filter.setAttribute('style', 'display:none');
+	}
+	// R
+		if (r_checkbox.checked == true) {
+		r_filter.setAttribute('style', 'display:block');
+	}
+	else {
+		r_filter.setAttribute('style', 'display:none');
+	}
+	// I
+		if (i_checkbox.checked == true) {
+		i_filter.setAttribute('style', 'display:block');
+	}
+	else {
+		i_filter.setAttribute('style', 'display:none');
+	}
+	// Z
+		if (z_checkbox.checked == true) {
+		z_filter.setAttribute('style', 'display:block');
+	}
+	else {
+		z_filter.setAttribute('style', 'display:none');
+	}
+	// Y
+		if (y_checkbox.checked == true) {
+		y_filter.setAttribute('style', 'display:block');
+	}
+	else {
+		y_filter.setAttribute('style', 'display:none');
+	}
+}
 
 function zoom_in() {
 	u_filter.setAttribute('style', 'background-size: ' + zoom + '%');

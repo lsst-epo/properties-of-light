@@ -39,7 +39,7 @@ input[type="range"] {
   /*display: block;*/
   -webkit-appearance: none;
   background-color: #daf0ff;
-  width: 250px;
+  width: 200px;
   height: 5px;
   border-radius: 5px;
   outline: 0;
