@@ -2,12 +2,14 @@
 var zoom = 100;
 
 // Image Classes
+var intro_filter = document.getElementsByClassName('intro_filter')[0];
 var u_filter = document.getElementsByClassName('u_filter')[0];
 var g_filter = document.getElementsByClassName('g_filter')[0];
 var r_filter = document.getElementsByClassName('r_filter')[0];
 var i_filter = document.getElementsByClassName('i_filter')[0];
 var z_filter = document.getElementsByClassName('z_filter')[0];
 var y_filter = document.getElementsByClassName('y_filter')[0];
+
 
 // Slider Values 
 var u_value = document.getElementById('u_value');
@@ -30,13 +32,17 @@ function check() {
 	// U
 	if (u_checkbox.checked == true) {
 		u_filter.setAttribute('style', 'display:block');
+		intro_filter.setAttribute('style', 'display:none');
 	}
 	else {
 		u_filter.setAttribute('style', 'display:none');
+		intro_filter.setAttribute('style', 'display:block');
 	}
 	// G
 		if (g_checkbox.checked == true) {
-		g_filter.setAttribute('style', 'display:block');
+			g_filter.setAttribute('style', 'display:block');
+			intro_filter.setAttribute('style', 'display:none');
+
 	}
 	else {
 		g_filter.setAttribute('style', 'display:none');
@@ -44,6 +50,8 @@ function check() {
 	// R
 		if (r_checkbox.checked == true) {
 		r_filter.setAttribute('style', 'display:block');
+		intro_filter.setAttribute('style', 'display:none');
+
 	}
 	else {
 		r_filter.setAttribute('style', 'display:none');
@@ -51,6 +59,8 @@ function check() {
 	// I
 		if (i_checkbox.checked == true) {
 		i_filter.setAttribute('style', 'display:block');
+		intro_filter.setAttribute('style', 'display:none');
+
 	}
 	else {
 		i_filter.setAttribute('style', 'display:none');
@@ -58,6 +68,8 @@ function check() {
 	// Z
 		if (z_checkbox.checked == true) {
 		z_filter.setAttribute('style', 'display:block');
+		intro_filter.setAttribute('style', 'display:none');
+
 	}
 	else {
 		z_filter.setAttribute('style', 'display:none');
@@ -65,6 +77,7 @@ function check() {
 	// Y
 		if (y_checkbox.checked == true) {
 		y_filter.setAttribute('style', 'display:block');
+		intro_filter.setAttribute('style', 'display:none');
 	}
 	else {
 		y_filter.setAttribute('style', 'display:none');
