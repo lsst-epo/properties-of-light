@@ -104,14 +104,14 @@ input[type=range]::-webkit-slider-thumb {
   	background-size: 100%;
   	background-blend-mode: multiply;
   	background-image: url('./assets/m33/png/m33_u.png');
-  	background-color: #A649EC;
+  	/*background-color: #A649EC;*/
   	mix-blend-mode: screen;
   	-webkit-filter: brightness(100%);
   	-webkit-filter: saturate(2.5); 
-  	/*display: none; */
     -webkit-box-shadow: 3px 3px  6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
     -moz-box-shadow:    3px 3px  6px #ccc;  /* Firefox 3.5 - 3.6 */
     box-shadow:         3px 3px  6px #ccc;
+    display: none; 
 }
 
 
@@ -124,11 +124,11 @@ input[type=range]::-webkit-slider-thumb {
   	background-size: 100%;
   	background-blend-mode: multiply;
   	background-image: url('./assets/m33/png/m33_g.png');
-  	background-color: #3933FF;
+  	/*background-color: #3933FF;*/
   	mix-blend-mode: screen;
   	-webkit-filter: brightness(100%); 
   	-webkit-filter: saturate(2.5); 
-  	/*display: none;*/
+  	display: none;
 
 }
 
@@ -140,12 +140,12 @@ input[type=range]::-webkit-slider-thumb {
 	height: 90%;
 	background-blend-mode: multiply;
 	background-image: url('./assets/m33/png/m33_r.png');
-	background-color: #6FD898;
+	/*background-color: #6FD898;*/
   mix-blend-mode: screen;
   background-size: 100%;
   -webkit-filter: brightness(100%); 
   -webkit-filter: saturate(2.5);
-  /*display: none;*/
+  display: none;
 }
 
 /* Yellow */
@@ -156,12 +156,12 @@ input[type=range]::-webkit-slider-thumb {
   height: 90%;
   background-blend-mode: multiply;
   background-image: url('./assets/m33/png/m33_i.png');
-  background-color: #E9DE20;
+  /*background-color: #E9DE20;*/
   mix-blend-mode: screen;
   background-size: 100%;
   -webkit-filter: brightness(100%);
   -webkit-filter: saturate(2.5);
-  /*display: none;*/
+  display: none;
 }
 
 /* Orange */
@@ -172,12 +172,12 @@ input[type=range]::-webkit-slider-thumb {
   height: 90%;
   background-blend-mode: multiply;
   background-image: url('./assets/m33/png/m33_z.png');
-  background-color: #E39F62;
+  /*background-color: #E39F62;*/
   mix-blend-mode: screen;
   background-size: 100%;
   -webkit-filter: brightness(100%); 
   -webkit-filter: saturate(2.5);
-  /*display: none;*/
+  display: none;
 }
 
 /* Red */
@@ -188,12 +188,12 @@ input[type=range]::-webkit-slider-thumb {
   height: 90%;
   background-blend-mode: multiply;
   background-image: url('./assets/m33/png/m33_y.png');
-  background-color: #D73131;
+  /*background-color: #D73131;*/
   mix-blend-mode: screen;
   background-size: 100%;
   -webkit-filter: brightness(100%); 
   -webkit-filter: saturate(1.7);
-  /*display: none;*/
+  display: none;
 }
 
 
