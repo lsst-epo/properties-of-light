@@ -125,7 +125,7 @@ function reset() {
 // Update image values on slider change 
 u_value.addEventListener('change', function() {
 	u_filter.style.WebkitFilter = 'saturate('+ this.value +')'; 
-	u_filter.style.WebkitFilter = 'brightness('+ this.value*3 +')'; 
+	u_filter.style.WebkitFilter = 'brightness('+ this.value*1.5 +')'; 
 
 	
 });
@@ -147,7 +147,7 @@ i_value.addEventListener('change', function() {
 
 z_value.addEventListener('change', function() {
 	z_filter.style.WebkitFilter = 'saturate('+ this.value +')'; 
-	z_filter.style.WebkitFilter = 'brightness('+ this.value/8 +')'; 
+	z_filter.style.WebkitFilter = 'brightness('+ this.value/9 +')'; 
 });
 
 y_value.addEventListener('change', function() {
