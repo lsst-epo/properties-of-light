@@ -125,33 +125,33 @@ function reset() {
 // Update image values on slider change 
 u_value.addEventListener('change', function() {
 	u_filter.style.WebkitFilter = 'saturate('+ this.value +')'; 
-	u_filter.style.WebkitFilter = 'brightness('+ this.value*1.5 +')'; 
+	u_filter.style.WebkitFilter = 'brightness('+ this.value*1.2 +')'; 
 
 	
 });
 
 g_value.addEventListener('change', function() {
 	g_filter.style.WebkitFilter = 'saturate('+ this.value +')'; 
-	g_filter.style.WebkitFilter = 'brightness('+ this.value +')'; 
+	g_filter.style.WebkitFilter = 'brightness('+ this.value/2.5 +')'; 
 });
 
 r_value.addEventListener('change', function() {
 	r_filter.style.WebkitFilter = 'saturate('+ this.value +')'; 
-	r_filter.style.WebkitFilter = 'brightness('+ this.value/4 +')'; 
+	r_filter.style.WebkitFilter = 'brightness('+ this.value/7 +')'; 
 });
 
 i_value.addEventListener('change', function() {
 	i_filter.style.WebkitFilter = 'saturate('+ this.value +')'; 
-	i_filter.style.WebkitFilter = 'brightness('+ this.value/10 +')'; 
+	i_filter.style.WebkitFilter = 'brightness('+ this.value/18 +')'; 
 });
 
 z_value.addEventListener('change', function() {
 	z_filter.style.WebkitFilter = 'saturate('+ this.value +')'; 
-	z_filter.style.WebkitFilter = 'brightness('+ this.value/9 +')'; 
+	z_filter.style.WebkitFilter = 'brightness('+ this.value/16 +')'; 
 });
 
 y_value.addEventListener('change', function() {
-	y_filter.style.WebkitFilter = 'brightness('+ this.value/4 +')'; 
+	y_filter.style.WebkitFilter = 'brightness('+ this.value/6 +')'; 
 });
 
 // Color Picker
