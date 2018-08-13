@@ -107,12 +107,12 @@ function check() {
 
 // Resets images to a default
 function reset() {
-		u_filter.setAttribute("style", "-webkit-filter: brightness(1);display:block");
-		g_filter.setAttribute("style", "-webkit-filter: brightness(1.6);display:block");
-		r_filter.setAttribute("style", "-webkit-filter: brightness(1);display:block ");
-		i_filter.setAttribute("style", "-webkit-filter: brightness(.5);display:block");
-		z_filter.setAttribute("style", "-webkit-filter: brightness(.7);display:block");
-		y_filter.setAttribute("style", "-webkit-filter: saturate(1.8);display:block ");
+		u_filter.setAttribute("style", "-webkit-filter: brightness(1);display:block;background-color:#A649EC");
+		g_filter.setAttribute("style", "-webkit-filter: brightness(1.6);display:block;background-color:#3933FF");
+		r_filter.setAttribute("style", "-webkit-filter: brightness(1);display:block;background-color:#6FD898");
+		i_filter.setAttribute("style", "-webkit-filter: brightness(.5);display:block;background-color:#E9DE20");
+		z_filter.setAttribute("style", "-webkit-filter: brightness(.7);display:block;background-color:#E39F62");
+		y_filter.setAttribute("style", "-webkit-filter: saturate(1.8);display:block;background-color:#D73131");
 		u_checkbox.click();
 		g_checkbox.click();
 		r_checkbox.click();
