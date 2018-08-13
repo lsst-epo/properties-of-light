@@ -22,7 +22,7 @@
             <input class="form-check-input position-static" data-target="u_filter" type="checkbox" id="u_checkbox" onclick="check()"> U 
             <input type="range" min="1" max="7" step=".1" class="range" id="u_value">
             <!-- <input type="color" class="input-color" name="color" value="#A649EC" /> -->
-              <select class="custom-select" style="width:100px;" id="inputGroupSelect04" aria-label="Color">
+              <select class="custom-select" style="width:100px;" id="u_select" aria-label="Color" onchange="color_picker()">
                 <option value="" disabled selected>Select</option>
                 <option value="violet">Violet</option>
                 <option value="blue">Blue</option>
@@ -37,7 +37,7 @@
           <p class="filter">
             <input class="form-check-input position-static" id="g_checkbox" onclick="check()" type="checkbox"> G 
             <input type="range" min="1" max="7" step=".1" id="g_value">
-            <select class="custom-select" style="width:100px;" id="inputGroupSelect04" aria-label="Color">
+            <select class="custom-select" style="width:100px;" id="g_select" aria-label="Color" onchange="color_picker()">
                 <option value="" disabled selected>Select</option>
                 <option value="violet">Violet</option>
                 <option value="blue">Blue</option>
@@ -51,7 +51,7 @@
           <p class="filter">
             <input class="form-check-input position-static" id="r_checkbox" onclick="check()" type="checkbox"> R 
             <input type="range" min="2" max="26" step=".1" class="range" id="r_value">
-            <select class="custom-select" style="width:100px;" id="inputGroupSelect04" aria-label="Color">
+            <select class="custom-select" style="width:100px;" id="r_select" aria-label="Color" onchange="color_picker()">
                 <option value="" disabled selected>Select</option>
                 <option value="violet">Violet</option>
                 <option value="blue">Blue</option>
@@ -65,7 +65,7 @@
           <p class="filter">
             <input class="form-check-input position-static" id="i_checkbox" onclick="check()" type="checkbox"> I 
             <input type="range" min="2" max="26" step=".1" class="range" id="i_value">
-            <select class="custom-select" style="width:100px;" id="inputGroupSelect04" aria-label="Color">
+            <select class="custom-select" style="width:100px;" id="i_select" aria-label="Color" onchange="color_picker()">
                 <option value="" disabled selected>Select</option>
                 <option value="violet">Violet</option>
                 <option value="blue">Blue</option>
@@ -79,7 +79,7 @@
           <p class="filter">
             <input class="form-check-input position-static" id="z_checkbox" onclick="check()" type="checkbox"> Z 
             <input type="range" min="2" max="26" step=".1" class="range" id="z_value">
-              <select class="custom-select" style="width:100px;" id="inputGroupSelect04" aria-label="Color">
+              <select class="custom-select" style="width:100px;" id="z_select" aria-label="Color" onchange="color_picker()">
                 <option value="" disabled selected>Select</option>
                 <option value="violet">Violet</option>
                 <option value="blue">Blue</option>
@@ -93,7 +93,7 @@
           <p class="filter">
             <input class="form-check-input position-static" id="y_checkbox" onclick="check()" type="checkbox"> Y 
             <input type="range" min="2" max="26" step=".1" class="range" id="y_value">
-              <select class="custom-select" style="width:100px;" id="inputGroupSelect04" aria-label="Color">
+              <select class="custom-select" style="width:100px;" id="y_select" aria-label="Color" onchange="color_picker()">
                 <option value="" disabled selected>Select</option>
                 <option value="violet">Violet</option>
                 <option value="blue">Blue</option>
@@ -110,8 +110,8 @@
         </div>
 
         <!-- Images -->
-        <div class="col-8">
-          <div>
+        <div class="col-8" style="filter: contrast(1.2);">
+          <div >
             <div class="intro_filter"><h2>Select a filter to begin.</h2></div>
             <div class="u_filter"></div>
             <div class="g_filter"></div>

@@ -28,129 +28,253 @@ var i_checkbox = document.getElementById('i_checkbox');
 var z_checkbox = document.getElementById('z_checkbox');
 var y_checkbox = document.getElementById('y_checkbox');
 
+// Select Variables
+var u_select = document.getElementById('u_select');
+var g_select = document.getElementById('g_select');
+var r_select = document.getElementById('r_select');
+var i_select = document.getElementById('i_select');
+var z_select = document.getElementById('z_select');
+var y_select = document.getElementById('y_select');
+
+// Turns the Filters on and off if you click the checkbox.
 function check() {
+	
+	// var inputs = document.querySelectorAll("input[type='checkbox']");
+	if (u_checkbox.checked == true || g_checkbox.checked == true || r_checkbox.checked == true || i_checkbox.checked == true || z_checkbox.checked == true || y_checkbox.checked == true) {
+		intro_filter.style.display = 'none'
+	} else {
+		intro_filter.style.display = 'block'
+	}
+
+
 	// U
 	if (u_checkbox.checked == true) {
-		u_filter.setAttribute('style', 'display:block');
-		intro_filter.setAttribute('style', 'display:none');
+		u_filter.style.display = 'block';	
 	}
 	else {
-		u_filter.setAttribute('style', 'display:none');
-		intro_filter.setAttribute('style', 'display:block');
+		u_filter.style.display = 'none';
+		
 	}
-	// G
-		if (g_checkbox.checked == true) {
-			g_filter.setAttribute('style', 'display:block');
-			intro_filter.setAttribute('style', 'display:none');
 
+	// G
+	if (g_checkbox.checked == true) {
+		g_filter.style.display = 'block';	
 	}
 	else {
-		g_filter.setAttribute('style', 'display:none');
+		g_filter.style.display = 'none';
+		
 	}
 	// R
-		if (r_checkbox.checked == true) {
-		r_filter.setAttribute('style', 'display:block');
-		intro_filter.setAttribute('style', 'display:none');
-
+	if (r_checkbox.checked == true) {
+		r_filter.style.display = 'block';	
 	}
 	else {
-		r_filter.setAttribute('style', 'display:none');
+		r_filter.style.display = 'none';
+		
 	}
-	// I
-		if (i_checkbox.checked == true) {
-		i_filter.setAttribute('style', 'display:block');
-		intro_filter.setAttribute('style', 'display:none');
 
+		// I
+	if (i_checkbox.checked == true) {
+		i_filter.style.display = 'block';	
 	}
 	else {
-		i_filter.setAttribute('style', 'display:none');
+		i_filter.style.display = 'none';
+		
 	}
-	// Z
-		if (z_checkbox.checked == true) {
-		z_filter.setAttribute('style', 'display:block');
-		intro_filter.setAttribute('style', 'display:none');
 
+		// Z
+	if (z_checkbox.checked == true) {
+		z_filter.style.display = 'block';	
 	}
 	else {
-		z_filter.setAttribute('style', 'display:none');
+		z_filter.style.display = 'none';
+		
 	}
-	// Y
-		if (y_checkbox.checked == true) {
-		y_filter.setAttribute('style', 'display:block');
-		intro_filter.setAttribute('style', 'display:none');
+
+		// Y
+	if (y_checkbox.checked == true) {
+		y_filter.style.display = 'block';	
 	}
 	else {
-		y_filter.setAttribute('style', 'display:none');
+		y_filter.style.display = 'none';
+		
 	}
-}
+	
 
-function zoom_in() {
-	u_filter.setAttribute('style', 'background-size: ' + zoom + '%');
-	g_filter.setAttribute('style', 'background-size: ' + zoom + '%');
-	r_filter.setAttribute('style', 'background-size: ' + zoom + '%');
-	i_filter.setAttribute('style', 'background-size: ' + zoom + '%');
-	z_filter.setAttribute('style', 'background-size: ' + zoom + '%');
-	y_filter.setAttribute('style', 'background-size: ' + zoom + '%');
-	zoom+=2;
-}
-
-function zoom_out() {
-	zoom-=2;
-	u_filter.setAttribute('style', 'background-size: ' + zoom + '%');
-	g_filter.setAttribute('style', 'background-size: ' + zoom + '%');
-	r_filter.setAttribute('style', 'background-size: ' + zoom + '%');
-	i_filter.setAttribute('style', 'background-size: ' + zoom + '%');
-	z_filter.setAttribute('style', 'background-size: ' + zoom + '%');
-	y_filter.setAttribute('style', 'background-size: ' + zoom + '%');
-}
-
-// TODO turns off layer on check
-function check_toggle() {
-  // If the checkbox is checked, display the output text
-  if (checkBox.checked == true){
-    image.style.display = "none";
-  } else {
-    image.style.display = "block";
-  }
+	
 }
 
 
+// Resets images to a default
 function reset() {
-	zoom = 100;
-	var button = document.getElementById('button'); 
-	button.addEventListener('click', function() {
-		u_filter.setAttribute("style", "-webkit-filter: brightness(100%);-webkit-filter: saturate(2.5); ");
-		g_filter.setAttribute("style", "-webkit-filter: brightness(100%);-webkit-filter: saturate(2.5); ");
-		r_filter.setAttribute("style", "-webkit-filter: brightness(100%);-webkit-filter: saturate(2.5); ");
-		i_filter.setAttribute("style", "-webkit-filter: brightness(100%);-webkit-filter: saturate(2.5); ");
-		z_filter.setAttribute("style", "-webkit-filter: brightness(100%);-webkit-filter: saturate(2.5); ");
-		y_filter.setAttribute("style", "-webkit-filter: brightness(100%);-webkit-filter: saturate(2.5); ");
-	});
-	zoom_in()
+		u_filter.setAttribute("style", "-webkit-filter: brightness(1);display:block");
+		g_filter.setAttribute("style", "-webkit-filter: brightness(1.6);display:block");
+		r_filter.setAttribute("style", "-webkit-filter: brightness(1);display:block ");
+		i_filter.setAttribute("style", "-webkit-filter: brightness(.5);display:block");
+		z_filter.setAttribute("style", "-webkit-filter: brightness(.7);display:block");
+		y_filter.setAttribute("style", "-webkit-filter: saturate(1.8);display:block ");
+		u_checkbox.click();
+		g_checkbox.click();
+		r_checkbox.click();
+		i_checkbox.click();
+		z_checkbox.click();
+		y_checkbox.click();
 }
 
 	
 // Update image values on slider change 
 u_value.addEventListener('change', function() {
-	u_filter.setAttribute('style', '-webkit-filter:saturate(' + this.value + ');-webkit-filter:brightness(' + this.value + ')');
+	u_filter.style.WebkitFilter = 'saturate('+ this.value +')'; 
+	u_filter.style.WebkitFilter = 'brightness('+ this.value*3 +')'; 
+
+	
 });
 
 g_value.addEventListener('change', function() {
-	g_filter.setAttribute('style', '-webkit-filter:saturate(' + this.value + ');-webkit-filter:brightness(' + this.value + ')');
+	g_filter.style.WebkitFilter = 'saturate('+ this.value +')'; 
+	g_filter.style.WebkitFilter = 'brightness('+ this.value +')'; 
 });
 
 r_value.addEventListener('change', function() {
-	r_filter.setAttribute('style', '-webkit-filter:saturate(' + this.value + ');-webkit-filter:brightness(' + this.value + ')');
+	r_filter.style.WebkitFilter = 'saturate('+ this.value +')'; 
+	r_filter.style.WebkitFilter = 'brightness('+ this.value/4 +')'; 
 });
 
 i_value.addEventListener('change', function() {
-	i_filter.setAttribute('style', '-webkit-filter:saturate(' + this.value + ');-webkit-filter:brightness(' + this.value + ')');
+	i_filter.style.WebkitFilter = 'saturate('+ this.value +')'; 
+	i_filter.style.WebkitFilter = 'brightness('+ this.value/10 +')'; 
 });
 
 z_value.addEventListener('change', function() {
-	z_filter.setAttribute('style', '-webkit-filter:saturate(' + this.value + ');-webkit-filter:brightness(' + this.value + ')');
+	z_filter.style.WebkitFilter = 'saturate('+ this.value +')'; 
+	z_filter.style.WebkitFilter = 'brightness('+ this.value/8 +')'; 
 });
 
 y_value.addEventListener('change', function() {
-	y_filter.setAttribute('style', '-webkit-filter:saturate(' + this.value + ');-webkit-filter:brightness(' + this.value + ')');
+	y_filter.style.WebkitFilter = 'brightness('+ this.value/4 +')'; 
 });
+
+// Color Picker
+
+function color_picker() {
+
+	// U
+	if (u_select.value == 'violet') {
+		u_filter.style.backgroundColor = '#A649EC';
+	}
+	if (u_select.value == 'blue') {
+		u_filter.style.backgroundColor = '#3933FF';
+	}
+	if (u_select.value == 'green') {
+		u_filter.style.backgroundColor = '#6FD898';
+	}
+	if (u_select.value == 'yellow') {
+		u_filter.style.backgroundColor = '#E9DE20';
+	}
+	if (u_select.value == 'orange') {
+		u_filter.style.backgroundColor = '#E39F62';
+	}
+	if (u_select.value == 'red') {
+		u_filter.style.backgroundColor = '#D73131';
+	}
+
+	// G
+	if (g_select.value == 'violet') {
+		g_filter.style.backgroundColor = '#A649EC';
+	}
+	if (g_select.value == 'blue') {
+		g_filter.style.backgroundColor = '#3933FF';
+	}
+	if (g_select.value == 'green') {
+		g_filter.style.backgroundColor = '#6FD898';
+	}
+	if (g_select.value == 'yellow') {
+		g_filter.style.backgroundColor = '#E9DE20';
+	}
+	if (g_select.value == 'orange') {
+		g_filter.style.backgroundColor = '#E39F62';
+	}
+	if (g_select.value == 'red') {
+		g_filter.style.backgroundColor = '#D73131';
+	}
+
+
+		// R
+	if (r_select.value == 'violet') {
+		r_filter.style.backgroundColor = '#A649EC';
+	}
+	if (r_select.value == 'blue') {
+		r_filter.style.backgroundColor = '#3933FF';
+	}
+	if (r_select.value == 'green') {
+		r_filter.style.backgroundColor = '#6FD898';
+	}
+	if (r_select.value == 'yellow') {
+		r_filter.style.backgroundColor = '#E9DE20';
+	}
+	if (r_select.value == 'orange') {
+		r_filter.style.backgroundColor = '#E39F62';
+	}
+	if (r_select.value == 'red') {
+		r_filter.style.backgroundColor = '#D73131';
+	}
+		// I
+	if (i_select.value == 'violet') {
+		i_filter.style.backgroundColor = '#A649EC';
+	}
+	if (i_select.value == 'blue') {
+		i_filter.style.backgroundColor = '#3933FF';
+	}
+	if (i_select.value == 'green') {
+		i_filter.style.backgroundColor = '#6FD898';
+	}
+	if (i_select.value == 'yellow') {
+		i_filter.style.backgroundColor = '#E9DE20';
+	}
+	if (i_select.value == 'orange') {
+		i_filter.style.backgroundColor = '#E39F62';
+	}
+	if (i_select.value == 'red') {
+		i_filter.style.backgroundColor = '#D73131';
+	}
+		// Z
+	if (z_select.value == 'violet') {
+		z_filter.style.backgroundColor = '#A649EC';
+	}
+	if (z_select.value == 'blue') {
+		z_filter.style.backgroundColor = '#3933FF';
+	}
+	if (z_select.value == 'green') {
+		z_filter.style.backgroundColor = '#6FD898';
+	}
+	if (z_select.value == 'yellow') {
+		z_filter.style.backgroundColor = '#E9DE20';
+	}
+	if (z_select.value == 'orange') {
+		z_filter.style.backgroundColor = '#E39F62';
+	}
+	if (z_select.value == 'red') {
+		z_filter.style.backgroundColor = '#D73131';
+	}
+		// G
+	if (y_select.value == 'violet') {
+		y_filter.style.backgroundColor = '#A649EC';
+	}
+	if (y_select.value == 'blue') {
+		y_filter.style.backgroundColor = '#3933FF';
+	}
+	if (y_select.value == 'green') {
+		y_filter.style.backgroundColor = '#6FD898';
+	}
+	if (y_select.value == 'yellow') {
+		y_filter.style.backgroundColor = '#E9DE20';
+	}
+	if (y_select.value == 'orange') {
+		y_filter.style.backgroundColor = '#E39F62';
+	}
+	if (y_select.value == 'red') {
+		y_filter.style.backgroundColor = '#D73131';
+	}
+
+
+}
