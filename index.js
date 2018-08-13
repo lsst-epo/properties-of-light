@@ -177,6 +177,9 @@ function color_picker() {
 	if (u_select.value == 'red') {
 		u_filter.style.backgroundColor = '#D73131';
 	}
+	if (u_select.value == 'none') {
+		u_filter.style.backgroundColor = 'transparent';
+	}
 
 	// G
 	if (g_select.value == 'violet') {
@@ -197,9 +200,13 @@ function color_picker() {
 	if (g_select.value == 'red') {
 		g_filter.style.backgroundColor = '#D73131';
 	}
+	if (g_select.value == 'none') {
+		g_filter.style.backgroundColor = 'transparent';
+	}
 
 
-		// R
+
+	// R
 	if (r_select.value == 'violet') {
 		r_filter.style.backgroundColor = '#A649EC';
 	}
@@ -218,7 +225,13 @@ function color_picker() {
 	if (r_select.value == 'red') {
 		r_filter.style.backgroundColor = '#D73131';
 	}
-		// I
+	if (r_select.value == 'none') {
+		r_filter.style.backgroundColor = 'transparent';
+	}
+
+
+
+	// I
 	if (i_select.value == 'violet') {
 		i_filter.style.backgroundColor = '#A649EC';
 	}
@@ -237,7 +250,13 @@ function color_picker() {
 	if (i_select.value == 'red') {
 		i_filter.style.backgroundColor = '#D73131';
 	}
-		// Z
+	if (i_select.value == 'none') {
+		i_filter.style.backgroundColor = 'transparent';
+	}
+
+
+
+	// Z
 	if (z_select.value == 'violet') {
 		z_filter.style.backgroundColor = '#A649EC';
 	}
@@ -256,7 +275,11 @@ function color_picker() {
 	if (z_select.value == 'red') {
 		z_filter.style.backgroundColor = '#D73131';
 	}
-		// G
+	if (z_select.value == 'none') {
+		z_filter.style.backgroundColor = 'transparent';
+	}
+
+	// Y
 	if (y_select.value == 'violet') {
 		y_filter.style.backgroundColor = '#A649EC';
 	}
@@ -275,6 +298,10 @@ function color_picker() {
 	if (y_select.value == 'red') {
 		y_filter.style.backgroundColor = '#D73131';
 	}
+	if (y_select.value == 'none') {
+		y_filter.style.backgroundColor = 'transparent';
+	}
+
 
 
 }

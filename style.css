@@ -125,7 +125,7 @@ input[type=range]::-webkit-slider-thumb {
   	background-size: 100%;
   	background-blend-mode: multiply;
   	background-image: url('./assets/m33/png/m33_u.png');
-  	background-color: #A649EC;
+  	/*background-color: #A649EC;*/
   	mix-blend-mode: screen;
     filter: brightness(1);
   	/*-webkit-filter: saturate(3.5); */
@@ -145,7 +145,7 @@ input[type=range]::-webkit-slider-thumb {
   	background-size: 100%;
   	background-blend-mode: multiply;
   	background-image: url('./assets/m33/png/m33_g.png');
-  	background-color: #3933FF;
+  	/*background-color: #3933FF;*/
   	mix-blend-mode: screen;
     filter: brightness(1.6);
   	/*-webkit-filter: saturate(2.5); */
@@ -161,7 +161,7 @@ input[type=range]::-webkit-slider-thumb {
 	height: 90%;
 	background-blend-mode: multiply;
 	background-image: url('./assets/m33/png/m33_r.png');
-	background-color: #6FD898;
+	/*background-color: #6FD898;*/
   mix-blend-mode: screen;
   background-size: 100%;
   filter: brightness(1);
@@ -177,7 +177,7 @@ input[type=range]::-webkit-slider-thumb {
   height: 90%;
   background-blend-mode: multiply;
   background-image: url('./assets/m33/png/m33_i.png');
-  background-color: #E9DE20;
+  /*background-color: #E9DE20;*/
   mix-blend-mode: screen;
   background-size: 100%;
   filter: brightness(.5);
@@ -193,7 +193,7 @@ input[type=range]::-webkit-slider-thumb {
   height: 90%;
   background-blend-mode: multiply;
   background-image: url('./assets/m33/png/m33_z.png');
-  background-color: #E39F62;
+  /*background-color: #E39F62;*/
   mix-blend-mode: screen;
   background-size: 100%;
   filter: brightness(.7);
@@ -209,7 +209,7 @@ input[type=range]::-webkit-slider-thumb {
   height: 90%;
   background-blend-mode: multiply;
   background-image: url('./assets/m33/png/m33_y.png');
-  background-color: #D73131;
+  /*background-color: #D73131;*/
   mix-blend-mode: screen;
   background-size: 100%;
   /*filter: brightness(70%);*/
