@@ -107,18 +107,30 @@ function check() {
 
 // Resets images to a default
 function reset() {
-		u_filter.setAttribute("style", "-webkit-filter: brightness(1.92);display:block;background-color:#A649EC");
-		g_filter.setAttribute("style", "-webkit-filter: brightness(1.08);display:block;background-color:#3933FF");
-		r_filter.setAttribute("style", "-webkit-filter: brightness(1.45);display:block;background-color:#6FD898");
-		i_filter.setAttribute("style", "-webkit-filter: brightness(.52);display:block;background-color:#E9DE20");
-		z_filter.setAttribute("style", "-webkit-filter: brightness(.375);display:block;background-color:#E39F62");
-		y_filter.setAttribute("style", "-webkit-filter: saturate(1.9);display:block;background-color:#D73131");
-		u_checkbox.click();
-		g_checkbox.click();
-		r_checkbox.click();
-		i_checkbox.click();
-		z_checkbox.click();
-		y_checkbox.click();
+	u_filter.setAttribute("style", "-webkit-filter: brightness(1.92);display:block;background-color:#A649EC");
+	g_filter.setAttribute("style", "-webkit-filter: brightness(1.08);display:block;background-color:#3933FF");
+	r_filter.setAttribute("style", "-webkit-filter: brightness(1.45);display:block;background-color:#6FD898");
+	i_filter.setAttribute("style", "-webkit-filter: brightness(.52);display:block;background-color:#E9DE20");
+	z_filter.setAttribute("style", "-webkit-filter: brightness(.375);display:block;background-color:#E39F62");
+	y_filter.setAttribute("style", "-webkit-filter: saturate(1.9);display:block;background-color:#D73131");
+		if (u_checkbox.checked != true) {
+			u_checkbox.click();
+		}
+		if (g_checkbox.checked != true) {
+			g_checkbox.click();
+		}
+		if (r_checkbox.checked != true) {
+			r_checkbox.click();
+		}
+		if (i_checkbox.checked != true) {
+			i_checkbox.click();
+		}
+		if (z_checkbox.checked != true) {
+			z_checkbox.click();
+		}
+		if (y_checkbox.checked != true) {
+			y_checkbox.click();
+		}
 }
 
 	
